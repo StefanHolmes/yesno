@@ -1,0 +1,12 @@
+/* https://coolors.co/55d6be-acfcd9-7d5ba6-dddddd-fc6471 */
+:root {
+    --turquoise: hsla(169, 60%, 84%, 1);
+    --magic-mint: hsla(154, 32%, 99%, 1);
+    --royal-purple: hsla(267, 45%, 65%, 1);
+    --gainsboro: hsla(0, 0%, 87%, 1);
+    --fiery-rose: hsla(355, 60%, 99%, 1);
+}
+
+html {
+    background-color: var(--gainsboro);
+}
