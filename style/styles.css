@@ -1,12 +1,19 @@
 /* https://coolors.co/55d6be-acfcd9-7d5ba6-dddddd-fc6471 */
 :root {
-    --turquoise: hsla(169, 60%, 84%, 1);
-    --magic-mint: hsla(154, 32%, 99%, 1);
-    --royal-purple: hsla(267, 45%, 65%, 1);
-    --gainsboro: hsla(0, 0%, 87%, 1);
-    --fiery-rose: hsla(355, 60%, 99%, 1);
+    --turquoise: #55D6BE;
+    --magic-mint: #ACFCD9;
+    --royal-purple: #7D5BA6;
+    --gainsboro: #DDDDDD;
+    --fiery-rose: #FC6471;
 }
 
 html {
-    background-color: var(--gainsboro);
+    display: flex;
+    background-color: var(--fiery-rose);
+    font-family: 'Lato', sans-serif;
 }
+
+h1 {
+    font-family: 'Lilita One', cursive;
+}
+
