@@ -34,3 +34,7 @@ h1 {
     border: 8px solid var(--flame);
     height: 5em;
 }
+
+footer {
+    color: var(--magic-mint);
+}

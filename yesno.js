@@ -4489,7 +4489,7 @@ var $author$project$YesNo$view = function (model) {
 								_List_Nil,
 								_List_fromArray(
 									[
-										$elm$html$Html$text('no')
+										$elm$html$Html$text('No')
 									]))
 							]))
 					]))
