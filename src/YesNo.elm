@@ -17,8 +17,8 @@ view model =
         , div [ id "question" ]
             [ h2 [] [ text "Is the weather really nice?" ] ]
         , div [ id "answers" ]
-            [ p [] [ text "Yes" ]
-            , p [] [ text "No" ]
+            [ div [ id "yes" ] [ p [] [ text "Yes" ] ]
+            , div [ id "no" ] [ p [] [ text "No" ] ]
             ]
         ]
 

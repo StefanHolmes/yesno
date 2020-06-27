@@ -4461,18 +4461,36 @@ var $author$project$YesNo$view = function (model) {
 				_List_fromArray(
 					[
 						A2(
-						$elm$html$Html$p,
-						_List_Nil,
+						$elm$html$Html$div,
 						_List_fromArray(
 							[
-								$elm$html$Html$text('Yes')
+								$elm$html$Html$Attributes$id('yes')
+							]),
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$p,
+								_List_Nil,
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Yes')
+									]))
 							])),
 						A2(
-						$elm$html$Html$p,
-						_List_Nil,
+						$elm$html$Html$div,
 						_List_fromArray(
 							[
-								$elm$html$Html$text('No')
+								$elm$html$Html$Attributes$id('no')
+							]),
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$p,
+								_List_Nil,
+								_List_fromArray(
+									[
+										$elm$html$Html$text('no')
+									]))
 							]))
 					]))
 			]));

@@ -1,19 +1,36 @@
-/* https://coolors.co/55d6be-acfcd9-7d5ba6-dddddd-fc6471 */
+/* https://coolors.co/0b132b-acfcd9-ffe900-477998-e4572e */
 :root {
-    --turquoise: #55D6BE;
-    --magic-mint: #ACFCD9;
-    --royal-purple: #7D5BA6;
-    --gainsboro: #DDDDDD;
-    --fiery-rose: #FC6471;
+    --oxford-blue: #0b132b;
+    --magic-mint: #acfcd9;
+    --middle-yellow: #ffe900;
+    --celadon-blue: #477998;
+    --flame: #e4572e;
 }
 
 html {
-    display: flex;
-    background-color: var(--fiery-rose);
+    background-color: var(--oxford-blue);
     font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 100vw;
 }
 
 h1 {
+    background-color: var(--magic-mint);
     font-family: 'Lilita One', cursive;
 }
 
+#question {
+    background-color: var(--celadon-blue);
+}
+
+#answers {
+    width: 33vw;
+    margin: auto;
+}
+
+#answers p {
+    background-color: var(--middle-yellow);
+    padding: 8px;
+    border: 8px solid var(--flame);
+    height: 5em;
+}
