@@ -15,24 +15,43 @@ html {
 }
 
 h1 {
-    background-color: var(--magic-mint);
+    background-color: var(--celadon-blue);
+    color: var(--middle-yellow);
     font-family: 'Lilita One', cursive;
+    font-size: 4em;
+    text-shadow: 0px 4px black;
+    padding: 4px;
 }
 
 #question {
-    background-color: var(--celadon-blue);
+    background-color: var(--magic-mint);
+    color: black;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    padding: 4px;
+}
+
+h2 {
+    font-size: 2em;
+    width: 90%;
+    margin: auto;
 }
 
 #answers {
-    width: 33vw;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #answers p {
     background-color: var(--middle-yellow);
-    padding: 8px;
-    border: 8px solid var(--flame);
-    height: 5em;
+    color: black;
+    padding: 16px 64px 16px 64px;
+    font-size: 1.75em;
+    border: 2px solid var(--flame);
+    margin: 4px;
 }
 
 footer {

@@ -4404,6 +4404,7 @@ var $elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 			return 3;
 	}
 };
+var $author$project$YesNo$initialModel = 'Testing';
 var $elm$json$Json$Encode$string = _Json_wrap;
 var $elm$html$Html$Attributes$stringProperty = F2(
 	function (key, string) {
@@ -4449,51 +4450,51 @@ var $author$project$YesNo$view = function (model) {
 						_List_Nil,
 						_List_fromArray(
 							[
-								$elm$html$Html$text('Is the weather really nice?')
-							]))
-					])),
-				A2(
-				$elm$html$Html$div,
-				_List_fromArray(
-					[
-						$elm$html$Html$Attributes$id('answers')
-					]),
-				_List_fromArray(
-					[
-						A2(
-						$elm$html$Html$div,
-						_List_fromArray(
-							[
-								$elm$html$Html$Attributes$id('yes')
-							]),
-						_List_fromArray(
-							[
-								A2(
-								$elm$html$Html$p,
-								_List_Nil,
-								_List_fromArray(
-									[
-										$elm$html$Html$text('Yes')
-									]))
+								$elm$html$Html$text(model)
 							])),
 						A2(
 						$elm$html$Html$div,
 						_List_fromArray(
 							[
-								$elm$html$Html$Attributes$id('no')
+								$elm$html$Html$Attributes$id('answers')
 							]),
 						_List_fromArray(
 							[
 								A2(
-								$elm$html$Html$p,
-								_List_Nil,
+								$elm$html$Html$div,
 								_List_fromArray(
 									[
-										$elm$html$Html$text('No')
+										$elm$html$Html$Attributes$id('yes')
+									]),
+								_List_fromArray(
+									[
+										A2(
+										$elm$html$Html$p,
+										_List_Nil,
+										_List_fromArray(
+											[
+												$elm$html$Html$text('Yes')
+											]))
+									])),
+								A2(
+								$elm$html$Html$div,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$id('no')
+									]),
+								_List_fromArray(
+									[
+										A2(
+										$elm$html$Html$p,
+										_List_Nil,
+										_List_fromArray(
+											[
+												$elm$html$Html$text('No')
+											]))
 									]))
 							]))
 					]))
 			]));
 };
-var $author$project$YesNo$main = $author$project$YesNo$view('no model yet');
+var $author$project$YesNo$main = $author$project$YesNo$view($author$project$YesNo$initialModel);
 _Platform_export({'YesNo':{'init':_VirtualDom_init($author$project$YesNo$main)(0)(0)}});}(this));
