@@ -4404,7 +4404,7 @@ var $elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 			return 3;
 	}
 };
-var $author$project$YesNo$initialModel = 'Testing';
+var $author$project$YesNo$initialModel = 'Is the weather really nice?';
 var $elm$json$Json$Encode$string = _Json_wrap;
 var $elm$html$Html$Attributes$stringProperty = F2(
 	function (key, string) {

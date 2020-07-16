@@ -17,7 +17,7 @@ type alias Model =
 
 initialModel : Model
 initialModel =
-    "Testing"
+    "Is the weather really nice?"
 
 
 view : Model -> Html msg
@@ -34,5 +34,6 @@ view model =
         ]
 
 
+main : Html msg
 main =
     view initialModel
