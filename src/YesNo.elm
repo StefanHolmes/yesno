@@ -2,6 +2,7 @@ module YesNo exposing (main)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Prompts exposing (..)
 
 
 type alias Model =
