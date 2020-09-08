@@ -2,6 +2,11 @@ module YesNo exposing (main)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Prompts exposing (..)
+
+
+type alias Model =
+    String
 
 
 
@@ -11,17 +16,25 @@ import Html.Attributes exposing (..)
 -}
 
 
+initialModel : Model
+initialModel =
+    "Is the weather really nice?"
+
+
+view : Model -> Html msg
 view model =
     div [ class "content" ]
         [ h1 [] [ text "Should I Go To The Beach Today?" ]
         , div [ id "question" ]
-            [ h2 [] [ text "Is the weather really nice?" ] ]
-        , div [ id "answers" ]
-            [ p [] [ text "Yes" ]
-            , p [] [ text "No" ]
+            [ h2 [] [ text model ]
+            , div [ id "answers" ]
+                [ div [ id "yes" ] [ p [] [ text "Yes" ] ]
+                , div [ id "no" ] [ p [] [ text "No" ] ]
+                ]
             ]
         ]
 
 
+main : Html msg
 main =
-    view "no model yet"
+    view initialModel

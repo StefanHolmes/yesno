@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Should I Go To The Beach Today?</title>
+</head>
+
+<body>
+    <div id="yesno"></div>
+    <footer>
+        <p>Cookie and privacy policy: This website does not collect or store any data, personal or otherwise.</p>
+        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    </footer>
+    <script src="yesno.js"></script>
+    <script>
+        Elm.YesNo.init({ node: document.getElementById("yesno") });
+    </script>
+</body>
+
+</html>
