@@ -8,6 +8,7 @@ module YesNo exposing (main)
 import Browser
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Html.Events exposing (onClick)
 import Prompts exposing (..)
 
 
@@ -55,15 +56,15 @@ update msg model =
 -- VIEW
 
 
-view : Model -> Html msg
+view : Model -> Html Msg
 view model =
     div [ class "content" ]
         [ h1 [] [ text "Should I Go To The Beach Today?" ]
         , div [ id "question" ]
             [ h2 [] [ text model ]
             , div [ id "answers" ]
-                [ div [ onClick AnswerYes id "yes" ] [ p [] [ text "Yes" ] ]
-                , div [ onClick AnswerNo id "no" ] [ p [] [ text "No" ] ]
+                [ div [ id "yes" ] [ button [ onClick AnswerYes ] [ text "Yes" ] ]
+                , div [ id "no" ] [ button [ onClick AnswerNo ] [ text "No" ] ]
                 ]
             ]
         ]
